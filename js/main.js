@@ -195,17 +195,24 @@ function clearFormErrors() {
 const lightbox = document.getElementById('lightbox');
 const lightboxImage = document.getElementById('lightboxImage');
 const lightboxClose = document.querySelector('.lightbox-close');
-const galleryItems = document.querySelectorAll('.gallery-item');
+const galleryOverlayIcons = document.querySelectorAll('.gallery-overlay-icon');
 
-if (galleryItems.length > 0) {
-    galleryItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const img = item.querySelector('img');
-            if (img) {
-                lightboxImage.src = img.src;
-                lightboxImage.alt = img.alt;
-                lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden';
+// Open lightbox when clicking the overlay icon
+if (galleryOverlayIcons.length > 0) {
+    galleryOverlayIcons.forEach(icon => {
+        icon.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const galleryItem = icon.closest('.gallery-item');
+            if (galleryItem) {
+                const img = galleryItem.querySelector('img');
+                if (img) {
+                    lightboxImage.src = img.src;
+                    lightboxImage.alt = img.alt;
+                    if (lightbox) {
+                        lightbox.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }
+                }
             }
         });
     });
