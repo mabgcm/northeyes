@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Contact Northeyes Electrical Services in Barrie, ON. Get a free consultation, call for emergency service, or fill out our contact form.">
+  <meta name="keywords" content="contact electrician Barrie, electrical service request, emergency electrical service, electrician near me">
+  <meta property="og:title" content="Contact Us | Northeyes Electrical Services">
+  <meta property="og:description" content="Contact Northeyes Electrical Services in Barrie, Ontario. Available 24/7 for emergencies and consultations.">
+
+  <title>Contact | Northeyes Electrical Services</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===============================================
+     HEADER & NAVIGATION
+     =============================================== -->
+
+<header>
+  <div class="nav-container">
+    <div class="logo">
+      <img src="images/logo.png" alt="Northeyes Electrical Services Logo">
+      <span>Northeyes</span>
+    </div>
+
+    <nav class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="tel:+14379830606" class="nav-call-btn">Call Now</a></li>
+    </nav>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:+14379830606" class="btn btn--primary">Call Now</a>
+  </div>
+</header>
+
+<!-- ===============================================
+     CONTACT HERO
+     =============================================== -->
+
+<section class="hero" style="padding-top: 120px; min-height: 60vh;">
+  <div class="hero-content">
+    <h1>Get in Touch</h1>
+    <p class="subtitle">We're here to help with all your electrical needs</p>
+  </div>
+</section>
+
+<!-- ===============================================
+     CONTACT MAIN SECTION
+     =============================================== -->
+
+<section class="section">
+  <div class="container">
+    <div class="image-section" style="gap: var(--spacing-xl);">
+      <!-- FORM -->
+      <div class="scroll-animate">
+        <h2>Send us a Message</h2>
+        <p>Fill out the form below and we'll get back to you within one business day. For emergencies, please call us directly.</p>
+
+        <div class="form-success" id="formSuccess">
+          ✓ <strong>Thank you!</strong> Your message has been received. We'll contact you soon.
+        </div>
+
+        <form id="contactForm">
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <div class="form-error"></div>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="(437) 123-4567" required>
+            <div class="form-error"></div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <div class="form-error"></div>
+          </div>
+
+          <!-- Service Type -->
+          <div class="form-group">
+            <label for="serviceType">Service Type *</label>
+            <select id="serviceType" name="serviceType" required>
+              <option value="">Select a service...</option>
+              <option value="residential">Residential Electrical</option>
+              <option value="commercial">Commercial Electrical</option>
+              <option value="emergency">Emergency Service</option>
+              <option value="smart-home">Smart Home Installation</option>
+              <option value="inspection">Electrical Inspection</option>
+              <option value="energy">Energy Efficiency Solutions</option>
+              <option value="other">Other</option>
+            </select>
+            <div class="form-error"></div>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project or concern..." required></textarea>
+            <div class="form-error"></div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO CARD -->
+      <div class="scroll-animate">
+        <div class="card" style="position: sticky; top: 120px;">
+          <h2 style="margin-top: 0;">Contact Information</h2>
+
+          <!-- Phone -->
+          <div style="margin-bottom: var(--spacing-lg);">
+            <h4 style="margin-bottom: var(--spacing-sm); color: var(--accent-amber);">Phone</h4>
+            <a href="tel:+14379830606" style="font-size: 1.1rem; font-weight: var(--font-weight-bold);">+1 437 983 0606</a>
+            <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--text-muted);">24/7 for emergencies</p>
+          </div>
+
+          <!-- Email -->
+          <div style="margin-bottom: var(--spacing-lg);">
+            <h4 style="margin-bottom: var(--spacing-sm); color: var(--accent-amber);">Email</h4>
+            <a href="mailto:matt@northeyeselectric.com" style="font-size: 1rem;">matt@northeyeselectric.com</a>
+          </div>
+
+          <!-- Address -->
+          <div style="margin-bottom: var(--spacing-lg);">
+            <h4 style="margin-bottom: var(--spacing-sm); color: var(--accent-amber);">Address</h4>
+            <p style="margin-bottom: 0;">62 Dunsmore Lane<br>Barrie, ON<br>Canada</p>
+          </div>
+
+          <!-- Hours -->
+          <div style="margin-bottom: var(--spacing-lg);">
+            <h4 style="margin-bottom: var(--spacing-sm); color: var(--accent-amber);">Hours of Operation</h4>
+            <p style="margin-bottom: var(--spacing-xs);">
+              <strong>Monday–Friday:</strong><br>
+              7:00 AM – 6:00 PM
+            </p>
+            <p style="margin-bottom: var(--spacing-xs);">
+              <strong>Saturday:</strong><br>
+              8:00 AM – 4:00 PM
+            </p>
+            <p style="margin-bottom: 0;">
+              <strong>Emergency:</strong><br>
+              24/7 Available
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <a href="tel:+14379830606" class="btn btn--primary" style="width: 100%; text-align: center;">Call Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================================
+     GOOGLE MAPS
+     =============================================== -->
+
+<section class="section section--light">
+  <div class="container">
+    <h2 class="text-center mb-lg scroll-animate">Find Us on the Map</h2>
+    <div class="scroll-animate" style="border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-lg); height: 400px;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.8741762282567!2d-79.69163!3d44.39024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b14c5c4c4c4c5%3A0x4c4c4c4c4c4c4c4c!2s62%20Dunsmore%20Ln%2C%20Barrie%2C%20ON%20L4N%205R5!5e0!3m2!1sen!2sca!4v1234567890"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================================
+     FAQ SECTION
+     =============================================== -->
+
+<section class="section">
+  <div class="container">
+    <div class="text-center scroll-animate mb-lg">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="grid grid--2-col">
+      <div class="card scroll-animate">
+        <h3>How quickly can you respond to emergencies?</h3>
+        <p>We offer 24/7 emergency service with rapid response times. Most emergency calls are addressed within 1-2 hours depending on location and availability.</p>
+      </div>
+
+      <div class="card scroll-animate">
+        <h3>Do you provide free estimates?</h3>
+        <p>Yes! We provide free, detailed estimates for all projects. We'll discuss your needs, timeline, and budget before any work begins.</p>
+      </div>
+
+      <div class="card scroll-animate">
+        <h3>Are all your electricians licensed?</h3>
+        <p>Absolutely. All Northeyes electricians are fully licensed, trained, and certified. We maintain the highest industry standards and stay current with all building codes.</p>
+      </div>
+
+      <div class="card scroll-animate">
+        <h3>What areas do you serve?</h3>
+        <p>We serve Barrie, Innisfil, Angus, and surrounding areas throughout Simcoe County and surrounding regions. Contact us to confirm service availability for your location.</p>
+      </div>
+
+      <div class="card scroll-animate">
+        <h3>Do you handle warranty on your work?</h3>
+        <p>Yes. We stand behind our work with warranty coverage on all installations and repairs. Details are provided with every project completion.</p>
+      </div>
+
+      <div class="card scroll-animate">
+        <h3>Can you help with energy efficiency upgrades?</h3>
+        <p>Definitely. We specialize in energy efficiency solutions including LED retrofits, energy audits, solar integration, and smart home systems to reduce your electrical costs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================================
+     CTA SECTION
+     =============================================== -->
+
+<section class="section section--dark">
+  <div class="container text-center">
+    <h2 class="text-white scroll-animate">Ready to Schedule Your Service?</h2>
+    <p class="text-white mb-lg scroll-animate" style="font-size: 1.1rem;">Don't wait for electrical problems to get worse. Contact us today for professional, reliable electrical services.</p>
+    <div class="scroll-animate">
+      <a href="tel:+14379830606" class="btn btn--primary">Call +1 437 983 0606</a>
+      <p class="text-white mt-lg" style="margin-bottom: 0; font-size: 0.95rem;">Emergency service available 24/7</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================================
+     FOOTER
+     =============================================== -->
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Northeyes Electrical</h4>
+      <p class="footer-tagline">Expert electrical solutions for residential and commercial properties in Barrie, Ontario.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact Info</h4>
+      <ul>
+        <li><a href="tel:+14379830606">+1 437 983 0606</a></li>
+        <li><a href="mailto:matt@northeyeselectric.com">matt@northeyeselectric.com</a></li>
+        <li>62 Dunsmore Lane, Barrie ON</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Hours of Operation</h4>
+      <ul>
+        <li>Mon–Fri: 7:00 AM – 6:00 PM</li>
+        <li>Saturday: 8:00 AM – 4:00 PM</li>
+        <li>Emergency: 24/7 Available</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Northeyes Electrical Services. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Accessibility Statement</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===============================================
+     SCRIPTS
+     =============================================== -->
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
