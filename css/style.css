@@ -912,6 +912,13 @@ footer {
     margin-bottom: var(--spacing-lg);
 }
 
+.footer-logo {
+    height: 50px;
+    width: auto;
+    display: block;
+    margin-bottom: var(--spacing-lg);
+}
+
 .footer-section ul {
     list-style: none;
 }
