@@ -5,7 +5,7 @@
 /* CSS CUSTOM PROPERTIES (Variables) */
 :root {
     /* Colors */
-    --primary-dark: #0A1628;
+    --primary-dark: #18202C;
     --accent-amber: #F5A623;
     --light-bg: #F4F6F9;
     --text-dark: #1A1A2E;
@@ -560,6 +560,15 @@ header.scrolled {
     border-left: 4px solid transparent;
 }
 
+.card--dark h3 {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.card--dark p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
 .card--dark:hover {
     border-left-color: var(--accent-amber);
 }
@@ -567,6 +576,14 @@ header.scrolled {
 .card-icon {
     font-size: 2.5rem;
     margin-bottom: var(--spacing-md);
+    color: var(--accent-amber);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon i {
+    font-size: 2.5rem;
 }
 
 .card h3 {
@@ -588,6 +605,17 @@ header.scrolled {
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
     margin-bottom: var(--spacing-md);
+}
+
+/* Star Rating for Testimonials */
+.star-rating {
+    display: flex;
+    gap: 4px;
+}
+
+.star-rating i {
+    font-size: 1rem;
+    color: var(--accent-amber);
 }
 
 /* ===============================================
@@ -848,6 +876,12 @@ select.error {
     border-radius: 4px;
     display: none;
     margin-bottom: var(--spacing-lg);
+}
+
+.form-success i {
+    color: #059669;
+    margin-right: 8px;
+    font-size: 1.2rem;
 }
 
 .form-success.show {
